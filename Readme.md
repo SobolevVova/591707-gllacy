@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Владимир Соболев](https://up.htmlacademy.ru/htmlcss/20/user/591707).
-* Наставник: `Неизвестно`.
+* Студент: [Владимир Соболев](https://up.htmlacademy.ru/htmlcss/20/user/591707)
+* Наставник: [Макс Пушкарёв](https://up.htmlacademy.ru/htmlcss/20/user/591707)
 
 ---
 
