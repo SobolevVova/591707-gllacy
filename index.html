@@ -9,28 +9,28 @@
 <body>
   <header class="main-header">
     <div class="main-header-left">
-      <a href="#" class="logo">
+      <a href="index-logo.html" class="logo">
   <img src="img/index-logo.html.svg" width="100" height="50" alt="Глейси">
       </a>
       <nav>
         <ul>
           <li>
-            <a href="#">Каталог</a>
+            <a href="catalog.html">Каталог</a>
           </li>
           <li>
-            <a href="#">Доставка</a>
+            <a href="transportation.html">Доставка</a>
           </li>
           <li>
-            <a href="#">О компании</a>
+            <a href="company.html">О компании</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="main-header-right">
       <div class="user-block">
-        <a class="button button-search" href="#">Поиск</a>
-        <a class="button button-login" href="#">Вход</a>
-        <a class="button button-cart" href="#">Пусто</a>
+        <a class="button button-search" href="search.html">Поиск</a>
+        <a class="button button-login" href="login.html">Вход</a>
+        <a class="button button-cart" href="cart.html">Пусто</a>
       </div>
       <div class="header-contacts">
         <span class="header-time">С 10 до 20,ежедевно</span>
@@ -38,9 +38,16 @@
       </div>
     </div>
   </header>
-  <div class="slider"></div>
+  <div class="slider">
+    <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+    <img src="img/slaider1.jpg" width="240" height="120" alt="Крем-брюле и пломбир
+с малиновым джемом">
+<img src="img/slaider2.jpg" width="240" height="120" alt="Крем-брюле и пломбир
+с малиновым джемом">
+  </div>
   <div class="promo">
     <div class="promo-left">
+      <img src="img/crimson.jpg" width="240" height="120" alt="Малиновый фон">
       <h2>Малинка даром</h2>
       <p>
         При покупке 2кг фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
@@ -48,6 +55,7 @@
       <a href="#">Хочу варенье!></a>
     </div>
     <div class="promo-right">
+      <img src="img/chocolate.jpg" width="240" height="120" alt="Шоколадный фон">
       <h2>Шоколадки даром</h2>
       <p>
         При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
@@ -86,6 +94,7 @@
     </li>
   </ul>
   <div class="benefit">
+    <img src="img/waffle.jpg" width="240" height="120" alt="Фон вафли">
     <h2>
         Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого
           собственного производства на развес
@@ -108,33 +117,47 @@
   <div class="subscribe">
     <div class="blog-left">
       <a href="new-blog"></a>
+      <img src="img/strawberry.jpg" width="240" height="120" alt="Клубничный фон">
       <p>Новое в нашем блоге</p>
       <p>10 способов сервировки фруктовых щербетиков к столу.</p>
     </div>
     <div class="subscribe-right">
-      <h1>Форма входа</h1>
-      <form action="http://htmlacademy.ru" method="post">
-        <label for="login-field">Ваш логин</label>
-        <input type="text" name="login" id="login-field"><br>
-        <label for="password-field">Ваш пароль</label>
-        <input type="password" name="password" id="password-field"><br>
-        <input type="submit" value="Отправить">
-      </form>
-    </div>
+      <img src="img/login.jpg" width="240" height="120" alt="Расылка">
+      <h2>Личный кабинет</h2>
+      <p>
+        Введите свой логин и пароль.
+      </p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+             <p>
+               <label class="visually-hidden" for="user-login">Логин</label>
+               <input class="login-icon-user" id="user-login" type="text"
+               name="login" placeholder="Логин">
+             </p>
+             <p>
+               <label class="visually-hidden" for="user-password">Пароль</label>
+               <input class="login-icon-password" id="user-password"
+               type="password" name="password" placeholder="Пароль">
+             </p>
+             <p class="login-password-info">
+               <label class="login-checkbox">
+                 <input type="checkbox" name="remember" class="visually-hidden">
+                 <span class="checkbox-indicator"></span>
+                 Запомните меня
+               </label>
+               <a class="restore" href="#">Я забыл пароль!</a>
+             </p>
+             <button class="button" type="submit">Войти</button>
+           </form>
+                 <button class="modal-close" type="button">Закрыть</button>
   </div>
   <div class="modal modal-map">
     <h2 class="contacts">Как добраться</h2>
-    <span class="modal-close"></span>
-    <p class="contacts">
-      <p>Адрес главного офиса</p>
-      <p>и офлайн-магазина:</p>
-      <p>ул.Большая Конюшенная</p>
-      <p>19/8,Санкт-Петербург</p>
-      <p>Для заказов по телефону:</p>
-      <p>8 812 450-25-25</p>
-      <p>(с 10 до 20 ежедевно)</p>
-      <button type="button">Форма обратной связи</button>
-    </p>
+    <p>
+          <img src="img/map.jpg" width="780" height="560" alt="Адрес главного офиса
+и офлайн-магазина:ул. Большая Конюшенная 19/8, Санкт-Петербур
+гДля заказов по телефону:8 812 450-25-25(с 10 до 20 ежедневно)">
+</p>
+     <button class="modal-close" type="button">Закрыть</button>
   </div>
   <footer>
     <div class="footer-social ">
