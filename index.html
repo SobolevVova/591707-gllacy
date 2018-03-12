@@ -16,15 +16,20 @@
         <ul>
           <li>
             <a href="catalog.html">Каталог</a>
-            <form class="catalog-form" action="https://echo.htmlacademy.ru" method="post">
-              <input type="text" name="new" value="" placeholder="Новинки">
-              <input type="text" name="creamy" value="" placeholder="Сливочное">
-              <input type="text" name="sherbets" value="" placeholder="Щербеты">
-              <input type="text" name="fruit-ice" value="" placeholder="фруктовый лёд">
-              <input type="text" name="melorin" value="" placeholder="Мелорин">
-              <button class="button" type="submit">Отправить</button>
-            </form>
           </li>
+          <li>
+            <a href="new">Новинки</a>
+          </li>
+          <li>
+            <a href="creamy">Сливочное</a>
+          </li>
+          <li>
+            <a href="sherbets">Щербеты</a>
+          </li>
+          <li>
+            <a href="fruit-ice">Фруктовый лёд</a>
+          </li>
+          <a href="melorin">Мелорин</a>
           <li>
             <a href="transportation.html">Доставка</a>
           </li>
@@ -104,7 +109,7 @@
   </div>
   <ul>
     <li>
-      <img src="img/1.png" width="267" height="267" alt="Сливочное
+      <img src="img/product-1.png" width="267" height="267" alt="Сливочное
         с апельсиновым джемом и цитрусовой стружкой">
       <p>
         Сливочное с апельсиновым джемом и цитрусовой стружкой
@@ -113,7 +118,7 @@
       <button class="button" type="button"></button>
     </li>
     <li>
-      <img src="img/2.png" width="267" height="267" alt="Сливочно-
+      <img src="img/product-2.png" width="267" height="267" alt="Сливочно-
         кофейное с кусочками шоколада">
       <p>
         Сливочно-кофейное с кусочками шоколада
@@ -122,7 +127,7 @@
       <button class="button" type="button"></button>
     </li>
     <li>
-      <img src="img/3.png" width="267" height="267" alt="Сливочно-
+      <img src="img/product-3.png" width="267" height="267" alt="Сливочно-
          клубничное с присыпкой из белого шоколада">
       <p>
         Сливочно-клубничное с присыпкой из белого шоколада
@@ -131,7 +136,7 @@
       <button class="button" type="button"></button>
     </li>
     <li>
-      <img src="img/4.png" width="267" height="267" alt="Сливочное
+      <img src="img/product-4.png" width="267" height="267" alt="Сливочное
         крем-брюле с карамельной подливкой">
       <p>
         Сливочное крем-брюле с карамельной подливкой
@@ -171,12 +176,25 @@
       </p>
     </div>
     <div class="subscribe-right">
-      <img src="img/login.jpg" width="100" height="50" alt="Расылка">
       <p>
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
       </p>
-      <a href="mail">Электронная почта</a>
-      <button type="button">Отправить</button>
+      <form class="user" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <label for="user-login">Логин</label>
+          <input id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label for="user-password">Пароль</label>
+          <input id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p>
+          <label>
+          <input type="checkbox" name="remember">Запомните меня
+        </label>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
     </div>
   </div>
   <div class="modal modal-map">
