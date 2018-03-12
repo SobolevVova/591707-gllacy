@@ -15,24 +15,32 @@
     </a>
       <div class="main-header-right">
         <div class="user-block">
-        <ul>
-        <li>
-          <a class="button button-catalog" href="catalog.html">Каталог</a>
-        </li>
-      <li>
-          <a class="button button-delivery" href="delivery.htm">Доставка и оплата</a>
-        </li>
-      <li>
-          <a class="button button-company" href="company.html">О компании</a>
-        </li>
-        </ul>
+          <ul>
+            <li>
+              <a class="button button-catalog" href="catalog.html">Каталог</a>
+            </li>
+            <li>
+              <a class="button button-delivery" href="delivery.htm">Доставка и оплата</a>
+            </li>
+            <li>
+              <a class="button button-company" href="company.html">О компании</a>
+            </li>
+          </ul>
         </div>
         <div class="header-contacts">
-          <a class="button button-search" href="search.html">Поиск</a>
-          <a class="button button-login" href="login.html">Вход</a>
-          <a class="button button-cart" href="cart.html">2 товара</a>
-          <span class="heder-time">С 10 до 20, ежедевно</span>
-          <span class="header-phone">8 812 450-25-25</span>
+          <ul>
+            <li>
+              <a class="button button-search" href="search.html">Поиск</a>
+            </li>
+            <li>
+              <a class="button button-login" href="login.html">Вход</a>
+            </li>
+            <li>
+              <a class="button button-cart" href="cart.html">2 товара</a>
+            </li>
+            <span class="heder-time">С 10 до 20, ежедевно</span>
+            <span class="header-phone">8 812 450-25-25</span>
+          </ul>
         </div>
       </div>
     </nav>
@@ -56,6 +64,13 @@
           <h3 class="sort">Сортировка:</h3>
           <details>
             <summary>по популярности</summary>
+            <form class="catalog-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="text" name="popularity" value="" placeholder="По популярности" checked>
+              <input type="text" name="not-expencive" value="" placeholder="Сначала недорогие">
+              <input type="text" name="expencive" value="" placeholder="Сначала дорогие">
+              <input type="text" name="of-fat" value="" placeholder="По жирности">
+              <button class="button" type="submit">Отправить</button>
+            </form>
           </details>
         </li>
         <li>
@@ -149,6 +164,7 @@
           <p class="catalog-item-price">
             <b>355 р/кг</b>
           </p>
+          <a href="view">Быстрый просмотр</a>
           <h3>
   <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
           </h3>
@@ -295,10 +311,20 @@
       </ul>
     </div>
     <div class="footer-sorting">
-      <a class="button" href="for-providers">Для поставщиков</a>
-      <a class="button" href="about-production">О производстве</a>
-      <a class="button" href="our-document">Наши документы</a>
-      <a class="button" href="environmental-standart">Экологические стандарты</a>
+      <ul>
+        <li>
+          <a class="button" href="for-providers">Для поставщиков</a>
+        </li>
+        <li>
+          <a class="button" href="about-production">О производстве</a>
+        </li>
+        <li>
+          <a class="button" href="our-document">Наши документы</a>
+        </li>
+        <li>
+          <a class="button" href="environmental-standart">Экологические стандарты</a>
+        </li>
+      </ul>
     </div>
     <p class="footer-copyright">
       <b>Разработано:</b>
