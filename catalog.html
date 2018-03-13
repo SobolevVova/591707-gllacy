@@ -50,9 +50,11 @@
               <b>1,5кг*300 руб</b>
               <b>450 руб</b>
             </li>
+          </ul>
+          <div class="header-contacts">
             <span class="heder-time">С 10 до 20, ежедевно</span>
             <span class="header-phone">8 812 450-25-25</span>
-          </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -71,29 +73,19 @@
   <main class="container">
     <h1 class="page-title">Сливочное мороженое</h1>
     <section class="filters">
-      <ul class="breadcrumbs">
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+        </ul class="filters">
         <li>
-          <h3 class="sort">Сортировка:</h3>
-          <details>
-            <summary>по популярности</summary>
-            <ul>
-              <li>
-                <a href="popularity">По популярности</a>
-              </li>
-              <li>
-                <a href="not-expencive">Сначала недорогие</a>
-              </li>
-              <li>
-                <a href="expencive">Сначала дорогие</a>
-              </li>
-              <li>
-                <a href="of-fat">По жирности</a>
-              </li>
-            </ul>
-          </details>
+               <div class="filters-title">Сортировка</div>
+               <select name="filters-title" id="filters-title">
+                 <option value="1">По популярности</option>
+                 <option value="2">Сначала недорогие</option>
+                 <option value="3">Сначала дорогие</option>
+                 <option value="4">По жирности</option>
+               </select>
         </li>
         <li>
-          <a href="price">цена</a>
+               <div class="filters-title">Цена</div>
           <b>100-500 руб</b>
           <label>
       <input type="range" name="radio">Цена
@@ -144,7 +136,7 @@
         <li>
           <a href="apply">Применить</a>
         </li>
-      </ul>
+      </>
     </section>
     <section class="catalog">
       <h3 class="visually-hidden">Виды мороженого</h3>
@@ -276,7 +268,7 @@
       </ul>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer>
     <div class="footer-social">
       <ul>
         <li>
