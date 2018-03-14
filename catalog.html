@@ -4,63 +4,121 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<header class="main-header">
-		<nav class="main-navigation">
-			<a class="main-header-logo"></a>
+		<div class="main-header-left">
 			<a href="index-logo.html" class="logo">
-      <img src="img/index-logo.html.svg" width="100" height="50" alt="Глейси">
-    </a>
-			<div class="main-header-right">
-				<div class="user-block">
-					<ul>
-						<li>
-							<a class="button button-catalog" href="catalog.html">Каталог</a>
-						</li>
-						<li>
-							<a class="button button-delivery" href="delivery.htm">Доставка и оплата</a>
-						</li>
-						<li>
-							<a class="button button-company" href="company.html">О компании</a>
-						</li>
-					</ul>
-				</div>
-				<div class="header-contacts">
-					<ul>
-						<li>
-							<a class="button button-search" href="search.html">Поиск</a>
-						</li>
-						<li>
-							<a class="button button-login" href="login.html">Вход</a>
-						</li>
-						<li>
-							<a class="button button-cart" href="cart.html">2 товара</a>
-							<button class="cart-close">Закрыть</button>
+  <img src="img/index-logo.html.svg" width="100" height="50" alt="Глейси">
+      </a>
+			<nav>
+				<ul>
+					<li>
+						<a href="catalog.html">Каталог</a>
+						<ul>
+							<li>
+								<a href="new">Новинки</a>
+							</li>
+							<li>
+								<a href="creamy">Сливочное</a>
+							</li>
+							<li>
+								<a href="sherbets">Щербеты</a>
+							</li>
+							<li>
+								<a href="fruit-ice">Фруктовый лёд</a>
+							</li>
+							<li>
+								<a href="melorin">Мелорин</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="transportation.html">Доставка</a>
+					</li>
+					<li>
+						<a href="company.html">О компании</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main-header-right">
+			<div class="user-block">
+				<ul>
+					<li>
+						<a class="button button-search" href="search.html">Поиск</a>
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+							<input type="text" name="what" value="" placeholder="Что ищем?">
+						</form>
+					</li>
+					<li>
+						<a class="button button-login" href="login.html">Вход</a>
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+							<input type="text" name="mail" value="" placeholder="Электронная почта">
+							<input type="text" name="password" value="" placeholder="Пароль">
+							<button class="button" type="submit">Войти</button>
+							<a class="restore" href="#">Забыли пароль?</a>
+							<a class="new-registration" href="#">Новая регестрация</a>
+						</form>
+					</li>
+					<li>
+						<a class="button button-cart" href="cart.html">2 товара</a>
+						<form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
+							<table>
+								<tr>
+									<td>
+										<button class="cart-close">Закрыть</button>
+									</td>
+									<td>
+										<img src="img/product-1.png" width="267" height="267" alt="Сливочное
+                 с апельсиновым джемом и цитрусовой стружкой">
+									</td>
+									<td>
+										Пломбир с апельсиновым джемом
+									</td>
+									<td>
+										1,5*200руб
+									</td>
+									<td>
+										300руб
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="cart-close">Закрыть</button>
+									</td>
+									<td>
+										<img src="img/product-1.png" width="267" height="267" alt="Сливочное
+                 с апельсиновым джемом и цитрусовой стружкой">
+									</td>
+									<td>
+										Клубничный пломбир с присыпкой из белого шоколада
+									</td>
+									<td>
+									1,5*300руб
+								</td>
+							<td>
+									450руб
+								</td>
+							</tr>
+							</table>
 							<p>
-								Пломбир с апельсиновым джемом
+								Итого 750руб
 							</p>
-							<b>1,5кг*200 руб</b>
-							<b>300 руб</b>
-							<button class="cart-close">Закрыть</button>
-							<p>
-								Клубничный пломбир с присыпкой из белого шоколада
-							</p>
-							<b>1,5кг*300 руб</b>
-							<b>450 руб</b>
-						</li>
-					</ul>
-					<div class="header-contacts">
-						<span class="heder-time">С 10 до 20, ежедевно</span>
-						<span class="header-phone">8 812 450-25-25</span>
-					</div>
-				</div>
+							<button type="submit">Оформить заказ</button>
+						</form>
+					</li>
+				</ul>
 			</div>
-		</nav>
+			<div class="header-contacts">
+				<span class="header-time">С 10 до 20,ежедевно</span>
+				<span class="header-phone">8 812 450-25-25</span>
+			</div>
+		</div>
 	</header>
 	<ul class="site-navigation">
 		<li>
@@ -88,54 +146,57 @@
           </select>
 					</li>
 					<li>
-						<div class="filters-title">Цена</div>
-						<b>100-500 руб</b>
+						<div class="filters-title">Цена 100руб-500руб</div>
 						<div class="range">Цена</div>
 					</li>
 					<li>
 						<div class="filters-title">Жирность</div>
-					</li>
-					<li>
-						<input type="radio" name="fatness-group" value="" id="low">
-						<label for="low">0%</label>
-					</li>
-					<li>
-						<input type="radio" name="fatness-group" value="" id="tens" checked>
-						<label for="tens">до 10%</label>
-					</li>
-					<li>
-						<input type="radio" name="fatness-group" value="" id="thirty">
-						<label for="thirty">до 30%</label>
-					</li>
-					<li>
-						<input type="radio" name="fatness-group" value="выше-30%" id="above">
-						<label for="above">выше 30%</label>
+						<ul>
+							<li>
+								<input type="radio" name="fatness-group" value="" id="low">
+								<label for="low">0%</label>
+							</li>
+							<li>
+								<input type="radio" name="fatness-group" value="" id="tens" checked>
+								<label for="tens">до 10%</label>
+							</li>
+							<li>
+								<input type="radio" name="fatness-group" value="" id="thirty">
+								<label for="thirty">до 30%</label>
+							</li>
+							<li>
+								<input type="radio" name="fatness-group" value="выше-30%" id="above">
+								<label for="above">выше 30%</label>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<div class="filters-title">Наполнители</div>
+						<ul>
+							<li>
+								<input type="checkbox" name="chocolate" id="filter-chocolate" checked>
+								<label for="filter-chocolate">шоколадные</label>
+							</li>
+							<li>
+								<input type="checkbox" name="sugar-powder" id="filter-sugar" checked>
+								<label for="filter-sugar">сахарные присыпки</label>
+							</li>
+							<li>
+								<input type="checkbox" name="fruits" id="filter-fruits">
+								<label for="filter-fruits">фрукты</label>
+							</li>
+							<li>
+								<input type="checkbox" name="syrups" id="filter-syrups">
+								<label for="filter-syrups">сиропы</label>
+							</li>
+							<li>
+								<input type="checkbox" name="jams" id="filter-jams">
+								<label for="filter-jams">джемы</label>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<input type="checkbox" name="chocolate" id="filter-chocolate" checked>
-						<label for="filter-chocolate">шоколадные</label>
-					</li>
-					<li>
-						<input type="checkbox" name="sugar-powder" id="filter-sugar" checked>
-						<label for="filter-sugar">сахарные присыпки</label>
-					</li>
-					<li>
-						<input type="checkbox" name="fruits" id="filter-fruits">
-						<label for="filter-fruits">фрукты</label>
-					</li>
-					<li>
-						<input type="checkbox" name="syrups" id="filter-syrups">
-						<label for="filter-syrups">сиропы</label>
-					</li>
-					<li>
-						<input type="checkbox" name="jams" id="filter-jams">
-						<label for="filter-jams">джемы</label>
-					</li>
-					<li>
-						<button type="button">Применить</button>
+						<button type="submit">Применить</button>
 					</li>
 				</ul>
 			</form>
