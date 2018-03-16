@@ -14,7 +14,7 @@ body {
 }
 
 .inner-page {
-  color: #323232;
+  color: #000000;
 
   background-color: #849d8f;
   background-image: url("img/pattern-light.jpg");
@@ -35,7 +35,7 @@ a {
   border: none;
 }
 
-  .button:hover,
+.button:hover,
 .button:focus,
 .button:active {
   background:rgb(232,78,55);
@@ -206,6 +206,89 @@ span {
 
 .modal modal-map button {
   background:rgb(232,78,55);
+}
+
+.breadcrumbs {
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+
+    background-color: #849d8f;
+}
+
+.container h1 {
+  color: #ffffff;
+
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 400;
+}
+
+.filters-title {
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filters-title option {
+  color: #323232;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+  .filters-title input {
+      color: #ffffff;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filters-title button {
+    color: #ffffff;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.pagination-list {
+  list-style: none;
+}
+.pagination-list {
+text-align:right;
+}
+
+.pagination-item a {
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: #323232;
+}
+
+.pagination-item-current a {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 footer {
