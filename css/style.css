@@ -65,7 +65,7 @@ a {
   border: 2px solid #000000;
 }
 
-.main-header-left li{
+1.main-header-left li{
   list-style: none;
 }
 
@@ -169,7 +169,7 @@ a {
 }
 
 .promo .container {
-  width: 1146;
+  width: 1146px;
   margin: 0 auto;
   padding: 0 26px;
 }
@@ -184,8 +184,9 @@ a {
 .ice-cream li {
   list-style: none;
 }
+
 .ict-cream .container {
-  width: 1146;
+  width: 1146px;
   margin: 0 auto;
   padding: 0 26px;
 }
@@ -209,7 +210,7 @@ a {
 }
 
 .subscribe .container {
-  width: 1046;
+  width: 1046px;
   margin: 0 auto;
   padding: 0 10px;
 }
