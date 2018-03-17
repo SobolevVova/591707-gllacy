@@ -50,6 +50,10 @@ a {
   text-decoration: underline;
 }
 
+.main-header-left li {
+  display: inline;
+}
+
 .user-block {
   font-size: 14px;
   line-height: 16px;
@@ -63,6 +67,20 @@ a {
 
 .main-header-left li{
   list-style: none;
+}
+
+.main-header-left > li {
+  position: relative;
+  display: inline-block;
+}
+
+.main-header-left > li:hover .sub-menu {
+    display: block;
+}
+
+.main-header-left .sub-menu {
+  display: none;
+  position: absolute;
 }
 
 .user-block li {
@@ -156,6 +174,16 @@ a {
   padding: 0 26px;
 }
 
+.ice-cream p {
+  color: #ffffff;
+}
+
+.ice-cream span {
+  color: #ffffff;
+}
+.ice-cream li {
+  list-style: none;
+}
 .ict-cream .container {
   width: 1146;
   margin: 0 auto;
