@@ -66,7 +66,7 @@ a {
   border: 2px solid #000000;
 }
 
-1.main-header-left li{
+.main-header-left li {
   list-style: none;
 }
 
@@ -75,7 +75,7 @@ a {
   display: inline-block;
 }
 
-.main-header-left > li
+.main-header-left > li,
 .hover .sub-menu {
     display: block;
 }
@@ -116,7 +116,7 @@ a {
 }
 
 .container {
-  width: 1146px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   outline: 2px solid black;
@@ -168,7 +168,7 @@ a {
 }
 
 .promo .container {
-  width: 1146px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 26px;
   outline: 2px solid yellow;
@@ -186,7 +186,7 @@ a {
 }
 
 .ice-cream {
-  width: 1146px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 26px;
   outline: 2px solid green;
@@ -194,11 +194,12 @@ a {
 
 .ice-cream {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   }
 
 .benefit {
-  width: 1146px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 26px;
   outline: 2px solid red;
@@ -217,7 +218,7 @@ a {
 }
 
 .subscribe .container {
-  width: 1146px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -295,7 +296,7 @@ a {
   background:#e84d37;
 }
 
-footer {
+.footer {
   color: #ffffff;
 
   background-color: #849d8f;
@@ -304,14 +305,14 @@ footer {
   background-repeat: repeat;
 }
 
-.container-inside {
-  width: 1146px;
+.footer .container {
+  width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
   outline: 2px solid gray;
 }
 
-.container-inside {
+.footer .container {
   display: flex;
   justify-content: space-between;
 }
@@ -355,6 +356,13 @@ footer {
   text-align: right;
 }
 
+.story .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 2px solid orange;
+}
+
 .breadcrumbs {
   color: #ffffff;
 
@@ -363,10 +371,16 @@ footer {
   font-weight: 400;
 
   background-color: #849d8f;
+  outline: 2px solid blue;
 }
 
 .breadcrumbs li {
+  color: #ffffff;
   list-style: none;
+}
+
+.ice-cream {
+  flex-wrap: wrap;
 }
 
 .page-title {
@@ -375,18 +389,6 @@ footer {
   font-size: 35px;
   line-height: 41px;
   font-weight: 400;
-}
-
-.filters-form {
-  width: 1146px;
-  margin: 0 auto;
-  padding: 0 10px;
-  outline: 2px solid yellow;
-}
-
-.filters-form {
-  display: flex;
-  justify-content: space-between;
 }
 
 .filters li {
@@ -415,29 +417,6 @@ footer {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-}
-
-.ice-cream-one {
-  width: 1146px;
-  margin: 0 auto;
-  padding: 0 10px;
-  outline: 2px solid gray;
-}
-
-.ice-cream-one {
-  display: flex;
-  justify-content: space-between;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-
-.ice-cream-one {
-  flex-direction: column;
-}
-
-.ice-cream-one li {
-  color: #ffffff;
-  list-style: none;
 }
 
 .paginatior-item {
