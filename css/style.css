@@ -66,20 +66,12 @@ input[type="radio"].visually-hidden {
   background:#ed5b3d;
 }
 
-.logo {
-  width: 156px;
-  height: 64px;
-  background-image: url("../img/index-logo.html.svg");
-  margin: 0px;
-  padding: 0px;
-}
-
 .main-header {
   margin-bottom: 30px;
 }
 
 .user-block li{
-  display: inline-block;
+  display   : inline-block;
   list-style: none;
 }
 
@@ -116,8 +108,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   width: 400px;
-  margin: 0px;
+  margin: 0px 187px;
   padding: 0px;
+  margin-bottom: 38px;
 }
 
 .user-navigation {
@@ -126,7 +119,7 @@ input[type="radio"].visually-hidden {
   width: 290px;
   margin: 0;
   padding: 0;
-  background-image: url("../img/");
+  background-image: url("../img/basket.svg");
   background-image: url("../img/");
   background-image: url("../img/");
 }
@@ -166,6 +159,7 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   color: #ffffff;
   background-color: #849d8f;
+  padding-left: 113px;
 }
 
 .header-phone {
@@ -173,10 +167,6 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   color: #ffffff;
   background-color: #849d8f;
-}
-
-.header-time,
-.header-phone {
   padding-left: 100px;
 }
 
@@ -248,9 +238,6 @@ input[type="radio"].visually-hidden {
 .promo .container {
  display: flex;
  justify-content: space-between;
- margin: 0 27px;
- padding: 0 27px;
- outline: 2px solid yellow;
 }
 
 .ice-cream p {
@@ -382,9 +369,6 @@ input[type="radio"].visually-hidden {
 .footer .container {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-  padding: 19px 0;
-  outline: 2px solid gray;
 }
 
 .footer-sorting a {
