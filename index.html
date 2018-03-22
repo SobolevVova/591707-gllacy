@@ -78,36 +78,40 @@
 			</div>
 		</div>
 	</header>
-	<div class="slider">
-		<div class="container">
-			<div class="slider-item">
-				<h1 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h1>
-				<img src="img/slaider1.jpg" width="100" height="50" alt="Крем-брюле и пломбир с малиновым джемом">
-				<button class="button" type="button">Давайте оба</button>
-			</div>
-			<div class="slider-item">
-				<h1 class="slider-title">Шоколадный пломбир и лимонный сорбет</h1>
-				<img src="img/slaider1.jpg" width="100" height="50" alt="Шоколадный пломбир и
-        лимонный сорбет">
-				<button class="button" type="button">Давайте оба</button>
-			</div>
-			<div class="slider-item">
-				<h1 class="slider-title">Пломбир с помадкой и клубничный щербет</h1>
-				<img src="img/slaider1.jpg" width="100" height="50" alt="Пломбир с помадкой и
-         клубничный щербет">
-				<button class="button" type="button">Давайте оба</button>
-			</div>
-		</div>
-	</div>
-	<label>
-     <input type="radio" name="radio" checked>
-   </label>
-	<label>
-     <input type="radio" name="radio">
-   </label>
-	<label>
-     <input type="radio" name="radio">
-   </label>
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+   <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+   <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+   <div class="site-wrapper">
+     <div class="container">
+       <section class="slider">
+         <div class="slider-controls">
+           <label for="product-1">Первый</label>
+           <label for="product-2">Второй</label>
+           <label for="product-3">Третий</label>
+         </div>
+         <ul class="slider-list">
+           <li class="slider-item slide" id="slide1">
+             <h3 class="slide-title">
+               Крем-брюле и пломбир с малиновым джемом
+             </h3>
+             <a class="button slide-button" href="#">Давайте оба!</a>
+           </li>
+           <li class="slider-item slide" id="slide2">
+             <h3 class="slide-title">
+               Шоколадный пломбир и лимонный сорбет
+             </h3>
+             <a class="button slide-button" href="#">Давайте оба!</a>
+           </li>
+           <li class="slider-item slide" id="slide3">
+             <h3 class="slide-title">
+               Пломбир с помадкой и клубничный щербет
+             </h3>
+             <a class="button slide-button" href="#">Давайте оба!</a>
+           </li>
+         </ul>
+       </section>
+     </div>
+   </div>
 	<div class="promo">
 		<div class="container">
 			<div class="promo-left">
