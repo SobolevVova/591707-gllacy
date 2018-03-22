@@ -75,7 +75,18 @@ input[type="radio"].visually-hidden {
 }
 
 .logo {
-  background-image: url("../img/logo.svg");
+  position: absolute;
+  top: 9px;
+  left: : 182px;
+
+  width: 156px;
+  height: 64px;
+
+  content: "";
+
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .main-header {
@@ -99,7 +110,6 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 
   color: #ffffff;
-  background-color: #849d8f;
 
   font-size: 16px;
   line-height: 18px;
@@ -113,7 +123,6 @@ input[type="radio"].visually-hidden {
 
 .user-block {
   color: #ffffff;
-  background-color: #849d8f;
 
   font-size: 14px;
   line-height: 16px;
@@ -145,40 +154,44 @@ input[type="radio"].visually-hidden {
 }
 
 .button-cart {
-  position: relative;
-
-  width: 120px;
-  padding-left: 20px;
-}
-
-  .button-cart::before {
   position: absolute;
   top: 29px;
-  left: 17px;
+  right: :106px;
 
-  width: 23px;
-  height: 23px;
+  width: 156px;
+  height: 64px;
 
   content: "";
 
-  opacity: 0.3;
-  background-image: url("../img/login.svg");
+  background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .button-login {
-  width: 95px;
+  position: absolute;
+  top: 29px;
+  right: :246px;
 
-  background-image:  url("");
+  width: 156px;
+  height: 64px;
+
+  content: "";
+
+  background-image: url("../.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .button-search {
   width: 33px;
+  margin-top: 28px;
 
   background-image:  url("../img/loupe.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  font-size: 0;
 }
 
 .site-navigation a,
@@ -217,7 +230,6 @@ input[type="radio"].visually-hidden {
   padding-left: 113px;
 
   color: #ffffff;
-  background-color: #849d8f;
 
   font-size: 14px;
   line-height: 16px;
@@ -227,7 +239,6 @@ input[type="radio"].visually-hidden {
   padding-left: 100px;
 
   color: #ffffff;
-  background-color: #849d8f;
 
   font-size: 22px;
   line-height: 24px;
@@ -298,7 +309,7 @@ input[type="radio"].visually-hidden {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 
   font-size: 60px;
   font-weight: 800;
@@ -343,6 +354,9 @@ input[type="radio"].visually-hidden {
   z-index: 20;
   bottom: 63px;
   left: 0;
+
+  margin-bottom: 154px;
+  padding-left: 28px;
 
   font-size: 0;
 }
@@ -551,8 +565,6 @@ input[type="radio"].visually-hidden {
 
 .footer {
   color: #ffffff;
-  background-color: #849d8f;
-  background-image: url("img/pattern-dark.jpg");
   background-repeat: repeat;
   background-position: 0 0;
 }
@@ -604,15 +616,25 @@ input[type="radio"].visually-hidden {
   display:inline-block;
 
   list-style: none;
-
-  background-image: url("../img/fb.svg");
-  background-image: url("../img/twitter.svg");
-  background-image: url("../img/vk.svg");
-  background-image: url("../img/instagram.svg");
 }
 
 .social-button {
+  position: absolute;
+  top: 35px;
+  left: : 20px;
+
+  width: 20px;
+  height: 20px;
+
+  content: "";
+
   color: #ffffff;
+  background-image: url("../img/twitter.svg");
+  background-image: url("../img/instagram.svg");
+  background-image: url("../img/fb.svg");
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .breadcrumbs {
