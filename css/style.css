@@ -81,6 +81,7 @@ input[type="radio"].visually-hidden {
 
   width: 156px;
   height: 64px;
+  padding-left: 27px;
 
   content: "";
 
@@ -122,6 +123,8 @@ input[type="radio"].visually-hidden {
 }
 
 .user-block {
+  padding-left: 40px;
+
   color: #ffffff;
 
   font-size: 14px;
@@ -147,46 +150,66 @@ input[type="radio"].visually-hidden {
 
   width: 270px;
   margin: 0;
-  padding: 0;
-
-  background-image: url("../img/");
-  background-image: url("../img/");
+  padding-right: 72px;
 }
 
-.button-cart {
-  position: absolute;
-  top: 29px;
-  right: :106px;
+.user-navigation li {
+  padding-left: 25px;
+}
 
-  width: 156px;
+.button-cart::before {
+  position: absolute;
+  top: 27px;
+  right: 100px;
+
+  width: 100px;
   height: 64px;
 
   content: "";
 
+  opacity: 0.2;
   background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.button-login {
+.button-cart:hover::before,
+.button-cart:focus::before,
+.button-cart:active::before {
+  opacity: 1;
+}
+
+.button-login::before {
   position: absolute;
   top: 29px;
-  right: :246px;
+  right: 284px;
 
-  width: 156px;
-  height: 64px;
+  width: 20px;
+  height: 22px;
 
   content: "";
 
-  background-image: url("../.svg");
+  opacity: 0.2;
+  color: #ffffff;
+  background-image: url("../img/entrance.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
+.button-login:hover::before,
+.button-login:focus::before,
+.button-login:active::before {
+  opacity: 1;
+}
+
 .button-search {
+  top: 29px;
+  right: 284px;
+
   width: 33px;
   margin-top: 28px;
 
+  opacity: 0.2;
   background-image:  url("../img/loupe.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -194,11 +217,17 @@ input[type="radio"].visually-hidden {
   font-size: 0;
 }
 
+.button-search:hover,
+.button-search:focus,
+.button-search:active {
+  opacity: 1;
+}
+
 .site-navigation a,
 .user-navigation a {
   display: block;
 
-  padding: 30px 15px;
+  padding: 40px 15px;
 
   color: #ffffff;
 }
@@ -309,6 +338,7 @@ input[type="radio"].visually-hidden {
 .slide-title {
   width: 700px;
   margin: 0 auto;
+  margin-top: -218px;
   margin-bottom: 26px;
 
   font-size: 60px;
@@ -319,7 +349,7 @@ input[type="radio"].visually-hidden {
 .button {
   display: inline-block;
 
-  padding: 12px 44px;
+  padding: 14px 29px;
 
   cursor: pointer;
   text-align: center;
@@ -355,7 +385,7 @@ input[type="radio"].visually-hidden {
   bottom: 63px;
   left: 0;
 
-  margin-bottom: 154px;
+  margin-bottom: -37px;
   padding-left: 28px;
 
   font-size: 0;
@@ -405,28 +435,96 @@ input[type="radio"].visually-hidden {
 
 .promo-left {
   width: 560px;
-  margin: 40px 13px;
+  margin: 38px 30px;
 
   color: #ffffff;
+  border-radius: 10px;
   background-color: #849d8f;
   background-image: url("../img/raspberry.jpg");
   background-repeat: repeat;
   background-position: 0 0;
 }
+.promo-left h2 {
+  margin: 15px;
 
-.promo-left button {
-  text-align: left;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.promo-left p {
+  margin: 0 17px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.promo-left .button {
+  position: absolute;
+
+  display: inline-block;
+
+  margin: 44px 371px;
+  padding: 11px 14px;
+
+  cursor: pointer;
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+
 }
 
 .promo-right {
  width: 560px;
- margin: 40px 13px;
+ height: 230px;
+ margin: 36px 26px;
+ padding-left: 36px;
 
  color: #ffffff;
+ border-radius: 10px;
  background-color: #849d8f;
  background-image: url("../img/chocolate.jpg");
  background-repeat: repeat;
  background-position: 0 0;
+}
+
+.promo-right .button {
+  position: absolute;
+
+  display: inline-block;
+
+  margin: 19px 342px;
+  padding: 0 34px;
+
+  cursor: pointer;
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.promo-right h2 {
+  margin: 15px;
+
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.promo-right p {
+  margin: 0 17px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .promo .container {
@@ -439,11 +537,24 @@ input[type="radio"].visually-hidden {
 }
 
 .ice-cream span {
+  position: absolute;
+  top: 1125px;
+  left: 24px;
+
+  margin: 0;
+  margin-left: 77px;
+
+  content: "";
+
   color: #ffffff;
+
+  font-size: 45px;
+  font-weight: 400;
 }
 
 .ice-cream li {
-  width: 200px;
+  width: 267px;
+   padding: 0px 16px;
 
   list-style: none;
 }
@@ -459,22 +570,47 @@ input[type="radio"].visually-hidden {
   list-style-type: none;
 }
 
-.ice-cream img {
-  margin-bottom: 15px;
+.ice-cream::before {
+  position: absolute;
+  top: 915px;
+  left: 24px;
+
+  width: 65px;
+  height: 65px;
+  margin-left: 77px;
+
+  content: "";
+
+  background-image: url("../img/hit.svg");
+  background-repeat: repeat;
+  background-position: 0 0;
 }
 
 .ice-cream p {
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  padding-left: 38px;
+
+  text-decoration: underline;
 }
 
 .benefit {
-  margin-bottom: 40px;
+  height: 310px;
+  margin: 19px 27px;
+  padding-top: 20px;
 
   list-style: none;
 
+  border-radius: 10px;
   background-image: url("../img/waffle.jpg");
 }
 
+.benefit li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  
 .benefit h2 {
   text-align: center;
 
