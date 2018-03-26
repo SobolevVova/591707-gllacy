@@ -77,7 +77,7 @@ input[type="radio"].visually-hidden {
 .logo {
   position: absolute;
   top: 9px;
-  left: : 182px;
+  left: 75px;
 
   width: 156px;
   height: 64px;
@@ -435,9 +435,8 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-left {
-  position: relative;
-
   width: 560px;
+  height: 230px;
   margin: 36px 0px 35px 28px;
 
   color: #ffffff;
@@ -465,8 +464,6 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-left .button {
-  position: absolute;
-
   display: inline-block;
 
   margin: 41px 373px;
@@ -484,8 +481,6 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-right {
-  position: relative;
-
  width: 560px;
  height: 230px;
  margin: 36px 26px;
@@ -499,8 +494,6 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-right .button {
-  position: absolute;
-
   display: inline-block;
 
   margin: 42px 351px;
@@ -549,7 +542,7 @@ input[type="radio"].visually-hidden {
 .ice-cream-sum {
   position: absolute;
   top: 209px;
-  left: 15px;
+  left: -4px;
 
   content: "";
 
@@ -560,11 +553,16 @@ input[type="radio"].visually-hidden {
   line-height: 45px;
 }
 
+.ruble {
+  position: absolute;
+  top:222;
+  right: 156;
+}
+
 .ice-cream-item {
   position: relative;
 
   width: 267px;
-  padding: 0px 16px;
 
   list-style: none;
 }
@@ -574,8 +572,8 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-around;
 
-  margin: 2px 4px 0 0;
-  padding: 2px 0;
+  margin: 6px 7px 0 7px;
+  padding: 0 2px 0 7px;
 
   list-style-type: none;
 }
@@ -583,7 +581,7 @@ input[type="radio"].visually-hidden {
 .ice-cream-item::before {
   position: absolute;
   top: 0;
-  left: 16px;
+  left: 0;
 
   width: 61px;
   height: 61px;
@@ -591,21 +589,6 @@ input[type="radio"].visually-hidden {
   content: "";
 
   background-image: url("../img/hit.svg");
-  background-repeat: repeat;
-  background-position: 0 0;
-}
-
-.ice-cream-sum::before {
-  position: absolute;
-  top: 216px;
-  left: 96px;
-
-  width: 33px;
-  height: 33px;
-
-  content: "";
-
-  background-image: url("../img/ruble.svg");
   background-repeat: repeat;
   background-position: 0 0;
 }
@@ -631,7 +614,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/ice-cream.svg");
   background-repeat: repeat;
   background-position: 0 0;
-  
+
 }
 
 .benefit-milk::before {
@@ -647,12 +630,12 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/eco.svg");
   background-repeat: repeat;
   background-position: 0 0;
-  
+
 }
 
 .benefit-cow::before {
   position: absolute;
-  top: -123px;
+  top: -102px;
   left: 585px;
 
   width: 49px;
@@ -667,7 +650,7 @@ input[type="radio"].visually-hidden {
 
 .benefit-thermometer::before {
   position: absolute;
-  top: -36px;
+  top: -15px;
   left: 11px;
 
   width: 49px;
@@ -765,13 +748,13 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
   background-image: url("../img/mail.jpg");
 
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 22px;
   }
 
 .subscribe-right-wrapper {
   margin: 1px;
-  padding: 0 0 55px 0;
+  padding: 2px 0 60px 0;
 
   border-radius: 18px;
   background-color: #ffffff;
@@ -779,24 +762,29 @@ input[type="radio"].visually-hidden {
 
 .subscribe-right p {
   margin: 0;
+  padding-left: 32px;
 
   color: #5a5a5a;
 }
 
 .subscribe-right input {
-  border: 2px solid #000000;
+  margin: 39px 8px 0 21px;
+  padding: 19px 184px 0 0;
+
+  border: 1px solid #000000;
   background-color: transparent;
 
   font: inherit;
 }
 
 .subscribe-right button {
-  position: absolute;
+  top: 100px;
+  right: 5px;
 
   display: inline-block;
 
-  margin: -12px 67px;
-  padding: 12px 13px;
+  margin: 36px 20px 0 0;
+  padding: 22px 24px 0 0;
 
   cursor: pointer;
   text-align: center;
@@ -809,23 +797,46 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-map {
+  position: relative;
+  top:38px;
+
   width: 1200px;
   height: 430px;
   margin: 0 auto;
 }
+.address {
+  position: absolute;
+  top: 62px;
+  right: 28px;
+
+  width: 300px;
+  height: 310px;
+
+  border-radius: 18px;
+  background-color: #ffffff;
+}
+
+.bold {
+  font-size: 18px;
+  font-weight: 400;
+  font-weight: bold;
+  line-height: 24px;
+}
+
 
 .modal-map p {
   margin: 0;
 
   color: #323232;
+
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .modal-map button {
-  position: absolute;
-
   display: inline-block;
 
-  margin: 12px 67px;
+  margin: 90px 0 0 25px;
   padding: 12px 13px;
 
   cursor: pointer;
@@ -849,59 +860,15 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.footer-sorting a {
-  text-decoration: underline;
-
-  color: #ffffff;
-}
-
 .footer-social {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 265px;
   margin: 0;
   margin-right: 130px;
 
   text-align: left;
-}
-
-.social-button {
-  width: 40px;
-  height: 40px;
-
-  opacity: 0.8;
-}
-
-.footer-sorting {
-  width: 345px;
-  margin: 0;
-
-  text-align:center;
-}
-
-.footer-copyright {
-  width: 195px;
-  margin: 0;
-  margin-left: auto;
-
-  text-align: right;
-}
-
-.footer-sorting li {
-  display: inline-block;
-
-  width: 49%;
-
-  list-style: none;
-
-  vertical-align: top;
-}
-
-.social-button:hover,
-.social-button:focus {
-  opacity: 1;
 }
 
 .footer-social ul {
@@ -909,7 +876,6 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
 
-  width: 190px;
   margin: 0 auto;
   padding: 0;
 
@@ -920,6 +886,42 @@ input[type="radio"].visually-hidden {
   display:inline-block;
 
   list-style: none;
+}
+
+.footer-sorting ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-sorting {
+  width: 370px;
+}
+
+.footer-sorting li {
+  flex-basis: 50%;
+
+  box-sizing: border-box;
+  margin: 66px 0 -65px 0;
+  padding: 0 0 0 25px;
+}
+
+.footer-sorting a {
+  text-decoration: underline;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer-copyright {
+  width: 109px;
+  
 }
 
 .breadcrumbs {
@@ -1048,7 +1050,7 @@ input[type="radio"].visually-hidden {
   top: 340px;
   left: 50%;
 
-display: none;
+  display: none;
 
   width: 480px;
   margin-left: -226px;
