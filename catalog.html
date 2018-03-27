@@ -49,15 +49,15 @@
 			</div>
 			<div class="main-header-right">
 				<div class="user-block">
-					<ul>
+					<ul class="user-navigation">
 						<li>
-							<a class="button button-search" href="search.html">Поиск</a>
+							<a class="button-search" href="search.html">Поиск</a>
 							<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 								<input type="text" name="what" value="" placeholder="Что ищем?">
 							</form>
 						</li>
 						<li>
-							<a class="button button-login" href="login.html">Вход</a>
+							<a class="button-login" href="login.html">Вход</a>
 							<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 								<input type="text" name="mail" value="" placeholder="Электронная почта">
 								<input type="text" name="password" value="" placeholder="Пароль">
@@ -67,7 +67,7 @@
 							</form>
 						</li>
 						<li>
-							<a class="button button-cart" href="cart.html">2 товара</a>
+							<a class="button-cart" href="cart.html">2 товара</a>
 							<form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
 								<table>
 									<tr>
@@ -125,8 +125,8 @@
 	<main class="story">
   <div class="container">
     <ul class="breadcrumbs">
-  		<li>
-  			<a href="main.html">Главная</a>
+  		<li class="breadcrumbs-menu">
+  			<a class="breadcrumbs-main" href="main.html">Главная</a>
   		</li>
   		<li>
   			<a href="catalog.html">Каталог</a>
@@ -138,7 +138,7 @@
 		<section class="filters">
 			<h1 class="page-title">Сливочное мороженое</h1>
 			<form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-				<ul class="filters">
+				<ul class="filters-menu">
 					<li>
 						<div class="filters-title">Сортировка</div>
 						<select name="filters-title" id="filters-title">
@@ -205,15 +205,16 @@
 			</form>
 		</section>
 		<section class="catalog">
+    <div class="container">
 			<h3 class="visually-hidden">Виды мороженого</h3>
-			<ul class="ice-cream">
-				<li>
+			<ul class="catalog-list">
+				<li class="catalog-item">
 					<img src="img/product-1.png" width="267" height="267" alt="Сливочное
              с апельсиновым джемом и цитрусовой стружкой">
 					<p>
 						Сливочное с апельсиновым джемом и цитрусовой стружкой
 					</p>
-					<span>310 р/кг</span>
+					<span class="ice-cream-sum">310<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"><path/></svg>/кг</span>
 				<button class="button" type="button">Быстрый просмотр</button>
 				</li>
 				<li>
@@ -221,7 +222,7 @@
 					<p>
 						Сливочно-кофейное с кусочками шоколада
 					</p>
-					<span>310 р/кг</span>
+					<span class="ice-cream-sum">380<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"><path/></svg>/кг</span>
 					<button class="button" type="button">Быстрый просмотр</button>
 				</li>
 				<li>
@@ -229,7 +230,7 @@
 					<p>
 						Сливочно-клубничное с присыпкой из белого шоколада
 					</p>
-					<span>310 р/кг</span>
+					<span class="ice-cream-sum">355<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"><path/></svg>/кг</span>
 					<button class="button" type="button">Быстрый просмотр</button>
 				</li>
 				<li>
@@ -238,7 +239,7 @@
 					<p>
 						Сливочное крем-брюле с карамельной подливкой
 					</p>
-					<span>310 р/кг</span>
+					<span class="ice-cream-sum">415<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"><path/></svg>/кг</span>
 					<button class="button" type="button">Быстрый просмотр</button>
 				</li>
 				<li>
@@ -247,7 +248,7 @@
 					<p>
 						Сливочное с брусничным джемом
 					</p>
-					<span>310 р/кг</span>
+					<span class="ice-cream-sum">325<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"><path/></svg>/кг</span>
 					<button class="button" type="button">Быстрый просмотр</button>
 				</li>
 				<li>
@@ -255,7 +256,7 @@
 					<p>
 						Сливочно-черничное с цельными ягодами черники
 					</p>
-					<span>310 р/кг</span>
+					<span class="ice-cream-sum">410<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"><path/></svg>/кг</span>
 					<button class="button" type="button">Быстрый просмотр</button>
 				</li>
 				<li>
@@ -263,7 +264,7 @@
 					<p>
 						Сливочно-лимонное с карамельной присыпкой
 					</p>
-					<span>310 р/кг</span>
+					<span class="ice-cream-sum">375<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"><path/></svg>/кг</span>
 					<button class="button" type="button">Быстрый просмотр</button>
 				</li>
 				<li>
@@ -271,7 +272,7 @@
 					<p>
 						Сливочное с шоколадной стружкой
 					</p>
-					<span>310 р/кг</span>
+					<span class="ice-cream-sum">320<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"><path/></svg>/кг</span>
 					<button class="button" type="button">Быстрый просмотр</button>
 				</li>
 				<li>
@@ -279,7 +280,7 @@
 					<p>
 						Сливочно-ванильное с кусочками шоколада
 					</p>
-					<span>310 р/кг</span>
+					<span class="ice-cream-sum">440<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"><path/></svg>/кг</span>
 					<button class="button" type="button">Быстрый просмотр</button>
 				</li>
 				<li>
@@ -287,7 +288,7 @@
 					<p>
 						Сливочноe с ментоловым сиропом
 					</p>
-					<span>310 р/кг</span>
+					<span class="ice-cream-sum">435<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"><path/></svg>/кг</span>
 					<button class="button" type="button">Быстрый просмотр</button>
 				</li>
 				<li>
@@ -295,7 +296,7 @@
 					<p>
 						Сливочное с кусочками черного шоколада
 					</p>
-					<span>310 р/кг</span>
+					<span class="ice-cream-sum">355<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"><path/></svg>/кг</span>
 					<button class="button" type="button">Быстрый просмотр</button>
 				</li>
 				<li>
@@ -303,10 +304,12 @@
 					<p>
 						Сливочное с мятным сиропом
 					</p>
-					<span>310 р/кг</span>
+					<span class="ice-cream-sum">420<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"><path/></svg>/кг</span>
 					<button class="button" type="button">Быстрый просмотр</button>
 				</li>
 			</ul>
+    </div>
+    </div>
 			<ul class="paginatior-list">
 				<li class="paginatior-item">
 					<a class="prev" href="#prev">Назад</a>
