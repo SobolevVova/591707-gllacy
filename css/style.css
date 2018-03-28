@@ -125,26 +125,15 @@ a {
 }
 
 .user-navigation a {
-  margin: 28px 24px 0 0;
+  margin: 28px 21px 0 0;
   padding: 2px 20px 3px 6px;
 }
 
-.button-cart {
-  margin: 31px 0 0 0;
-  padding: 11px 28px;
-
-  cursor: pointer;
-  text-align: center;
-  vertical-align: top;
-  text-decoration: none;
-
-  border: none;
-  border-radius: 50px;
-  background: linear-gradient(to bottom, #9db1a5 0%, #9db1a5 100%);
-
-  font-size: 14px;
-  line-height: 16px;
-}
+.basket { 
+  position: absolute;
+  top: 22px;
+  right: 26px;
+  }
 
 .button-cart::before {
   position: absolute;
@@ -183,7 +172,15 @@ a {
   background-position: 0 0;
 }
 
-.button-login:hover::before, .button-login:focus::before, .button-login:active::before {
+.login {
+  position: absolute;
+  top: 23px;
+  right: 149px;
+}
+
+.button-login:hover::before,
+.button-login:focus::before, 
+.button-login:active::before {
   opacity: 1;
 }
 
@@ -202,6 +199,12 @@ a {
   background-position: 0 0;
 
   font-size: 0;
+}
+
+.search {
+  position: absolute;
+  top: 23px;
+  right: 255px;
 }
 
 .button-search:hover, .button-search:focus, .button-search:active {
@@ -250,7 +253,7 @@ a {
   display: flex;
   flex-direction: column;
 
-  padding: 27px 0 0 85px;
+  margin: 28px 0 0 85px;
 }
 
 .main-header-left a:hover, .main-header-left a:focus, .main-header-right a:hover, .main-header-right a:focus {
@@ -319,8 +322,8 @@ a {
 .button {
   display: inline-block;
 
-  margin: 31px 0 0 0;
-  padding: 11px 28px;
+  margin-top: 31px;
+  padding: 11px 44px;
 
   cursor: pointer;
   text-align: center;
@@ -403,7 +406,7 @@ a {
 .promo-left {
   width: 560px;
   height: 230px;
-  margin: 38px 0px 35px 28px;
+  margin: 36px 0px 35px 28px;
 
   color: #ffffff;
   border-radius: 15px;
@@ -434,7 +437,7 @@ a {
   display: inline-block;
 
   margin: 41px 0 0 373px;
-  padding: 11px 16px;
+  padding: 11px 24px;
 
   cursor: pointer;
   text-align: center;
@@ -449,7 +452,7 @@ a {
 .promo-right {
   width: 560px;
   height: 230px;
-  margin: 37px 26px;
+  margin: 36px 26px;
 
   color: #ffffff;
   border-radius: 15px;
@@ -462,8 +465,8 @@ a {
 .promo-right .button {
   display: inline-block;
 
-  margin: 41px 0 0 349px;
-  padding: 12px 10px;
+  margin: 41px 0 0 350px;
+  padding: 12px 23px;
 
   cursor: pointer;
   text-align: center;
@@ -552,8 +555,8 @@ a {
 }
 
 .benefit {
-  height: 310px;
-  margin: 36px 27px 0 27px;
+  height: 307px;
+  margin: 39px 27px 0 27px;
 
   border-radius: 18px;
   background-image: url("../img/waffle.jpg");
@@ -735,8 +738,8 @@ a {
 .subscribe-right button {
   display: inline-block;
 
-  margin: 58px 0 0 4px;
-  padding: 12px 13px 10px 15px;
+  margin: 60px 0 0 9px;
+  padding: 9px 23px 10px 14px;
 
   cursor: pointer;
   text-align: center;
@@ -752,7 +755,7 @@ a {
   position: relative;
 
   width: 1200px;
-  height: 430px;
+  height: 429px;
   margin: 38px auto;
 }
 
@@ -787,8 +790,8 @@ a {
 .modal-map button {
   display: inline-block;
 
-  margin: 90px 0 0 25px;
-  padding: 12px 13px;
+  margin: 93px 0 0 24px;
+  padding: 12px 31px;
 
   cursor: pointer;
   text-align: center;
@@ -841,7 +844,7 @@ a {
 
 .twitter {
   bottom: 29px;
-  left: 31px;
+  left: 28px;
 }
 
 .twitter {
@@ -857,7 +860,7 @@ a {
 
 .instagram {
   bottom: 29px;
-  left: 49px;
+  left: 27px;
 }
 
 .instagram {
@@ -873,7 +876,7 @@ a {
 
 .facebook {
   bottom: 29px;
-  left: 65px;
+  left: 26px;
 }
 
 .facebook {
@@ -889,7 +892,7 @@ a {
 
 .vkontakte {
   bottom: 29px;
-  left: 82px;
+  left: 25px;
 }
 
 .vkontakte {
@@ -940,6 +943,29 @@ a {
 
 .footer-copyright {
   width: 116px;
+}
+
+.footer-copyright b {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.text {
+  position: relative;
+  right: 101px;
+  bottom: -10px;
+
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.academy {
+  position:relative;
+  right: 98px;
+  bottom: 54px;
+
+  width: 106px;
+  height: 40px;
 }
 
 .inner-page .button-cart::before {
