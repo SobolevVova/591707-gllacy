@@ -4,7 +4,6 @@ body {
 
   color: #323232;
   background-color: #849d8f;
-  background-image: url("img/bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -17,7 +16,6 @@ body {
 .inner-page {
   color: #000000;
   background-color: #849d8f;
-  background-image: url("img/pattern-light.jpg");
   background-repeat: repeat;
   background-position: 0 0;
 }
@@ -57,7 +55,8 @@ a {
 .logo {
   width: 156px;
   height: 64px;
-  margin: -36px 0 0 26px;
+  margin-bottom: 34px;
+  margin-left: 26px;
 
   content: "";
 
@@ -90,7 +89,7 @@ a {
   display: inline;
 
   margin-right: 20px;
-
+  margin-bottom: 38px;
   list-style: none;
 }
 
@@ -112,7 +111,7 @@ a {
   flex-wrap: wrap;
 
   width: 400px;
-  margin-top: -23px;
+
   padding-left: 30px;
 }
 
@@ -125,11 +124,11 @@ a {
 }
 
 .user-navigation a {
-  margin: 28px 21px 0 0;
+  margin: 7px 0 0 33px;
   padding: 2px 20px 3px 6px;
 }
 
-.basket { 
+.basket {
   position: absolute;
   top: 22px;
   right: 26px;
@@ -137,8 +136,8 @@ a {
 
 .button-cart::before {
   position: absolute;
-  top: 29px;
-  right: 28px;
+  top: 8px;
+  right: -23px;
 
   width: 100px;
   height: 64px;
@@ -157,29 +156,60 @@ a {
 
 .button-login::before {
   position: absolute;
-  top: 29px;
-  right: 190px;
+  top: 8px;
+  right: 59px;
 
   width: 20px;
-  height: 22px;
+  height: 19px;
 
   content: "";
 
-  opacity: 0.2;
+  opacity: 1;
   color: #ffffff;
   background-image: url("../img/entrance.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.login {
+.loupe {
+  position: relative;
+  top: 22px;
+  right: 18px;
+
+  width: 33px;
+  height: 33px;
+
+  border-radius: 50px;
+  background-color: #9db1a5;
+}
+
+.entrance {
   position: absolute;
-  top: 23px;
-  right: 149px;
+  top: 22px;
+  right: 152px;
+
+  width: 92px;
+  height: 33px;
+  opacity: 0.2;
+  border-radius: 50px;
+  background-color: #9db1a5;
+}
+
+.cart {
+  position: absolute;
+  top: 22px;
+  right: 52px;
+
+  width: 92px;
+  height: 33px;
+  opacity: 0.2;
+  border-radius: 50px;
+  background-color: #9db1a5;
+}
 }
 
 .button-login:hover::before,
-.button-login:focus::before, 
+.button-login:focus::before,
 .button-login:active::before {
   opacity: 1;
 }
@@ -187,7 +217,7 @@ a {
 .button-search {
   position: relative;
   top: 1px;
-  right: 12px;
+  right: 25px;
 
   width: 33px;
 
@@ -253,7 +283,7 @@ a {
   display: flex;
   flex-direction: column;
 
-  margin: 28px 0 0 85px;
+  margin: 44px 0 0 85px;
 }
 
 .main-header-left a:hover, .main-header-left a:focus, .main-header-right a:hover, .main-header-right a:focus {
@@ -982,6 +1012,12 @@ a {
   background-image: url("../img/basket-red.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.basket-red {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .breadcrumbs {
