@@ -15,7 +15,7 @@
       <div class="main-header-left">
         <a href="index-logo.html" class="logo">
   <img src="img/index-logo.html.svg" width="156" height="64" alt="Глейси">
-      </a>
+        </a>
         <nav>
           <ul class="site-navigation">
             <li>
@@ -72,7 +72,7 @@
             </li>
             <li>
               <div class="cart-two">
-                <a class="button-cart" href="cart.html">2 товара</a>
+                <a class="button-cart-two" href="cart.html">2 товара</a>
                 <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
                   <table>
                     <tr>
@@ -146,7 +146,7 @@
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
           <ul class="filters-menu">
             <li>
-              <div class="filters-sort">Сортировка</div>
+              <div class="filters-sort">Сортировка:</div>
               <select name="filters-title" id="filters-title">
                  <option value="1">по популярности</option>
                  <option value="2">сначала недорогие</option>
@@ -154,62 +154,62 @@
                  <option value="4">по жирности</option>
           </select>
             </li>
-            <li>
-                <form method="get" action="https://echo.htmlacademy.ru">
-                  <fieldset class="filter-item">
-                    <legend>Цена:100руб.-500руб.</legend>
-                    <div class="range-filter">
-                      <div class="range-controls">
-                        <div class="scale">
-                        <div class="toggle toggle-min"></div>
-                        <div class="toggle toggle-max"></div>
-                      </div>
+            <li class="filter-item">
+              <div class="price">
+                <legend>Цена:100руб.-500руб.</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
                     </div>
-                  </fieldset>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li>
-              <div class="filters-fat">Жирность</div>
+            <li class="filters-fat">
+              <div class="fatness">Жирность:</div>
               <ul class="fat">
                 <li>
                   <input type="radio" name="fatness-group" value="" id="low">
-                  <label for="low">0%</label>
+                  <label for="low"><svg class="circles" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"></path></svg>0%</label>
                 </li>
                 <li>
                   <input type="radio" name="fatness-group" value="" id="tens" checked>
-                  <label for="tens">до 10%</label>
+                  <label for="tens"><svg class="point" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"></path><circle fill="#FFFFFF" cx="12.5" cy="12.5" r="4.5"></circle></svg>до 10%</label>
                 </li>
                 <li>
                   <input type="radio" name="fatness-group" value="" id="thirty">
-                  <label for="thirty">до 30%</label>
+                  <label for="thirty"><svg class="hoop" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"></path></svg>до 30%</label>
                 </li>
                 <li>
                   <input type="radio" name="fatness-group" value="выше-30%" id="above">
-                  <label for="above">выше 30%</label>
+                  <label for="above">выше 30%<svg class="ring" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"></path></svg></label>
                 </li>
               </ul>
             </li>
-            <li>
-              <div class="filters-fillers">Наполнители</div>
+            <li class="filters-fillers">
+              <div class="additive">Наполнители</div>
               <ul class="fillers">
                 <li>
                   <input type="checkbox" name="chocolate" id="filter-chocolate" checked>
-                  <label for="filter-chocolate">шоколадные</label>
+                  <label for="filter-chocolate"><svg class="square" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"></path></svg>шоколадные</label>
                 </li>
                 <li>
                   <input type="checkbox" name="sugar-powder" id="filter-sugar" checked>
-                  <label for="filter-sugar">сахарные присыпки</label>
+                  <label for="filter-sugar"><svg class="box" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"></path></svg>сахарные присыпки</label>
                 </li>
                 <li>
                   <input type="checkbox" name="fruits" id="filter-fruits">
-                  <label for="filter-fruits">фрукты</label>
+                  <label for="filter-fruits"><svg class="cube" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"></path></svg>фрукты</label>
                 </li>
                 <li>
                   <input type="checkbox" name="syrups" id="filter-syrups">
-                  <label for="filter-syrups">сиропы</label>
+                  <label for="filter-syrups"><svg class="rect" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"></path></svg>сиропы</label>
                 </li>
                 <li>
                   <input type="checkbox" name="jams" id="filter-jams">
-                  <label for="filter-jams">джемы</label>
+                  <label for="filter-jams"><svg class="oval" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"></path></svg>джемы</label>
                 </li>
               </ul>
             </li>
@@ -217,7 +217,7 @@
               <button class="use" type="submit">Применить</button>
             </li>
           </ul>
-          </>
+        </form>
       </section>
       <section class="catalog">
         <h3 class="visually-hidden">Виды мороженого</h3>
@@ -229,7 +229,7 @@
               Сливочное с апельсиновым джемом и цитрусовой стружкой
             </p>
             <span class="catalog-sum">310<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-            <button class="look" type="button">Быстрый просмотр</button>
+            <button  type="button">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -237,7 +237,7 @@
               Сливочно-кофейное с кусочками шоколада
             </p>
             <span class="catalog-sum">380<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-            <button class="look" type="button">Быстрый просмотр</button>
+            <button  type="button">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -245,7 +245,7 @@
               Сливочно-клубничное с присыпкой из белого шоколада
             </p>
             <span class="catalog-sum">355<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-            <button class="look" type="button">Быстрый просмотр</button>
+            <button  type="button">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле
@@ -254,7 +254,7 @@
               Сливочное крем-брюле с карамельной подливкой
             </p>
             <span class="catalog-sum">415<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-            <button class="look" type="button">Быстрый просмотр</button>
+            <button  type="button">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <img src="img/product-5.png" width="267" height="267" alt="Сливочное с
@@ -263,7 +263,7 @@
               Сливочное с брусничным джемом
             </p>
             <span class="catalog-sum">325<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-            <button class="look" type="button">Быстрый просмотр</button>
+            <button  type="button">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <img src="img/product-6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
@@ -271,7 +271,7 @@
               Сливочно-черничное с цельными ягодами черники
             </p>
             <span class="catalog-sum">410<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"></svg><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-            <button class="look" type="button">Быстрый просмотр</button>
+            <button  type="button">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <img src="img/product-7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
@@ -279,7 +279,7 @@
               Сливочно-лимонное с карамельной присыпкой
             </p>
             <span class="catalog-sum">375<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-            <button class="look" type="button">Быстрый просмотр</button>
+            <button type="button">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <img src="img/product-8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
@@ -287,7 +287,7 @@
               Сливочное с шоколадной стружкой
             </p>
             <span class="catalog-sum">320<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-            <button class="look" type="button">Быстрый просмотр</button>
+            <button  type="button">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <img src="img/product-9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
@@ -295,7 +295,7 @@
               Сливочно-ванильное с кусочками шоколада
             </p>
             <span class="catalog-sum">440<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-            <button class="look" type="button">Быстрый просмотр</button>
+            <button  type="button">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <img src="img/product-10.png" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
@@ -303,7 +303,7 @@
               Сливочноe с ментоловым сиропом
             </p>
             <span class="catalog-sum">435<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-            <button class="look" type="button">Быстрый просмотр</button>
+            <button  type="button">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <img src="img/product-11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
@@ -311,7 +311,7 @@
               Сливочное с кусочками черного шоколада
             </p>
             <span class="catalog-sum">355<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-            <button class="look" type="button">Быстрый просмотр</button>
+            <button  type="button">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <img src="img/product-12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
