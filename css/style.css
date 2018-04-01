@@ -977,7 +977,7 @@ margin-top: 9px;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  margin-bottom: 147px;
+  margin-bottom: 21px;
   padding: 0;
 
   list-style: none;
@@ -1109,7 +1109,7 @@ margin-top: 9px;
 .text {
   position: relative;
   right: 101px;
-  bottom: 118px;
+  bottom: -9px;
 
   font-size: 12px;
   line-height: 18px;
@@ -1118,7 +1118,7 @@ margin-top: 9px;
 .academy {
   position:relative;
   right: 98px;
-  bottom:183px;
+  bottom:58px;
 
   width: 106px;
   height: 40px;
@@ -1620,9 +1620,6 @@ select {
   background-color: #ffffff;
 }
 
-.inner-page .text {
-  margin-top: 71px;
-}
 
 .feedback {
   position: fixed;
@@ -1767,10 +1764,6 @@ select {
   margin-top: 60px;
 }
 
-.inner-page .academy {
-  margin-top:-2px;
-}
-
 .inner-page .text {
-  margin-top:198px;
+  margin-top: 71px;
 }
