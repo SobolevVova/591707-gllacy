@@ -209,6 +209,21 @@ a {
   margin-top: 9px;
 }
 
+.button-login input {
+  position: absolute;
+  right: 15px;
+
+  width: 312px;
+  height: 40px;
+  margin: 22px 0 0 19px;
+  padding-left: 16px;
+
+  border: 1px solid #000000;
+  background-color: #ffffff;
+
+  font: inherit;
+}
+
 .cart {
   position: absolute;
   top: 22px;
@@ -222,7 +237,7 @@ a {
 }
 
 .button-cart {
-margin-top: 9px;
+  margin-top: 9px;
 }
 
 .button-login:hover::before,
@@ -254,8 +269,19 @@ margin-top: 9px;
   right: 255px;
 }
 
-.search-form {
-  display: none;
+.loupe input {
+  position: absolute;
+  right: 15px;
+
+  width: 312px;
+  height: 40px;
+  margin: 22px 0 0 19px;
+  padding-left: 16px;
+
+  border: 1px solid #000000;
+  background-color: #ffffff;
+
+  font: inherit;
 }
 
 .button-search:hover,
@@ -272,12 +298,39 @@ margin-top: 9px;
 }
 
 .sub-menu {
+  position: absolute;
+  top: 55px;
+  bottom: 105px;
+  left: 266px;
+
   display: none;
+
+  width: 115px;
+  height: 200px;
+
+  border-radius: 5px;
+  background-color: rgba(248, 247, 244, 1);
 }
 
-.cart-form {
-  display: none;
+.main-catalog:hover .sub-menu {
+  display: block;
 }
+
+.new {
+  background-color: transparent;
+}
+
+.folder {
+  margin: 0 0 7px 4px;
+  padding: 5px 12px 8px 12px;
+
+  border-radius: 50px;
+  background-color: rgba(247, 246,243, 1);
+}
+
+/* .cart-form {
+  display: none;
+} */
 
 .header-time {
   margin: 5px 0 0 8px;
@@ -1176,7 +1229,8 @@ margin-top: 9px;
   line-height: 16px;
 }
 
-.folder {
+
+.inner-page .folder {
   margin: 0 0 7px 4px;
   padding: 5px 12px 8px 12px;
 
@@ -1283,7 +1337,7 @@ select {
 }
 
 .inner-page label {
-  margin-right: 20px;
+  margin-right: 48px;
 }
 
 .rate {
@@ -1292,59 +1346,6 @@ select {
   letter-spacing: 0.6px;
 }
 
-.circles {
-  position: relative;
-  top: 6px;
-  left: 11px;
-}
-
-.point {
-  position: relative;
-  top: 6px;
-  left: 16px;
-}
-
-.hoop {
-  position: relative;
-  top: 6px;
-  left: 25px;
-}
-
-.ring {
-  position: relative;
-  top: 6px;
-  left: 36px;
-}
-
-.square {
-  position: relative;
-  top:6px;
-  left: 14px;
-}
-
-.box {
-  position: relative;
-  top: 6px;
-  left: 29px;
-}
-
-.cube {
-  position: relative;
-  top: 6px;
-  left: 54px;
-}
-
-.rect {
-  position: relative;
-  top: 6px;
-  left: 77px;
-}
-
-.oval {
-  position: relative;
-  top: 6px;
-  left: 92px;
-}
 
 .filters-title button {
   color: #ffffff;
@@ -1433,7 +1434,85 @@ select {
 
 .fatness {
   margin: 27px 0 0 20px;
+
+  color: #ffffff;
 }
+
+.filters-option {
+  position: relative;
+
+  margin-right: 17px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filters-input-checkbox + label::before {
+  position: absolute;
+  top: 8px;
+  left: 14px;
+
+  width: 100px;
+  height: 64px;
+
+  content: "";
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filters-input-checkbox:checked + label::after {
+  position: absolute;
+  top: 8px;
+  left: 14px;
+
+  width: 100px;
+  height: 64px;
+
+  content: "";
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filters-input-radio + label::before {
+  position: absolute;
+  top: 8px;
+  left: 14px;
+
+  width: 100px;
+  height: 64px;
+
+  content: "";
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filters-input-radio:checked + label::after {
+  position: absolute;
+  top: 8px;
+  left: 14px;
+
+  width: 100px;
+  height: 64px;
+
+  content: "";
+
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 
 .filters-fat {
   color: #ffffff;
@@ -1462,6 +1541,8 @@ select {
   margin: 14px 0 0 42px;
 
   letter-spacing: -0.6px;
+
+  color: #ffffff;
 }
 
 .filters-fillers {

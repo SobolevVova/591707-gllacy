@@ -19,10 +19,10 @@
         <nav>
           <ul class="site-navigation">
             <li>
-              <a class="folder" href="catalog.html">Каталог</a>
+              <a class="folder" href="#">Каталог</a>
               <ul class="sub-menu">
                 <li>
-                  <a href="new">Новинки</a>
+                  <a class="new" href="#">Новинки</a>
                 </li>
                 <li>
                   <a href="creamy">Сливочное</a>
@@ -167,49 +167,49 @@
                 </div>
               </div>
             </li>
-            <li class="filters-fat">
+            <li>
               <div class="fatness">Жирность:</div>
               <ul class="fat">
-                <li>
-                  <input type="radio" name="fatness-group" value="" id="low"><svg class="circles" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"></path></svg>
+                <li class="filters-option">
+                  <input class="visually-hidden filters-input filters-input-radio" type="radio" name="fatness-group" value="" id="low">
                   <label for="low">0%</label>
                 </li>
-                <li>
-                  <input type="radio" name="fatness-group" value="" id="tens" checked><svg class="point" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"></path><circle fill="#FFFFFF" cx="12.5" cy="12.5" r="4.5"></circle></svg>
+                <li class="filters-option">
+                  <input class="visually-hidden filters-input filters-input-radio" type="radio" name="fatness-group" value="" id="tens" checked>
                   <label for="tens">до 10%</label>
                 </li>
-                <li>
-                  <input type="radio" name="fatness-group" value="" id="thirty"><svg class="hoop" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"></path></svg>
+                <li class="filters-option">
+                  <input class="visually-hidden filters-input filters-input-radio" type="radio" name="fatness-group" value="" id="thirty">
                   <label for="thirty">до 30%</label>
                 </li>
-                <li>
-                  <input type="radio" name="fatness-group" value="выше-30%" id="above"><svg class="ring" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"></path></svg>
+                <li class="filters-option">
+                  <input class="visually-hidden filters-input filters-input-radio" type="radio" name="fatness-group" value="выше-30%" id="above">
                   <label for="above">выше 30%</label>
                 </li>
               </ul>
             </li>
-            <li class="filters-fillers">
+            <li>
               <div class="additive">Наполнители</div>
               <ul class="fillers">
-                <li>
-                  <input type="checkbox" name="chocolate" id="filter-chocolate" checked>
-                  <label for="filter-chocolate"><svg class="square" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"></path></svg>шоколадные</label>
+                <li class="filters-option">
+                  <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                  <label for="filter-chocolate">шоколадные</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="sugar-powder" id="filter-sugar" checked>
-                  <label for="filter-sugar"><svg class="box" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"></path></svg>сахарные присыпки</label>
+                <li class="filters-option">
+                  <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="sugar-powder" id="filter-sugar" checked>
+                  <label for="filter-sugar">сахарные присыпки</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="fruits" id="filter-fruits">
-                  <label for="filter-fruits"><svg class="cube" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"></path></svg>фрукты</label>
+                <li class="filters-option">
+                  <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="fruits" id="filter-fruits">
+                  <label for="filter-fruits">фрукты</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="syrups" id="filter-syrups">
-                  <label for="filter-syrups"><svg class="rect" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"></path></svg>сиропы</label>
+                <li class="filters-option">
+                  <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="syrups" id="filter-syrups">
+                  <label for="filter-syrups">сиропы</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="jams" id="filter-jams">
-                  <label for="filter-jams"><svg class="oval" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"></path></svg>джемы</label>
+                <li class="filters-option">
+                  <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="jams" id="filter-jams">
+                  <label for="filter-jams">джемы</label>
                 </li>
               </ul>
             </li>
