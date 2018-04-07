@@ -261,6 +261,21 @@ a {
 
   font-size: 0;
 }
+.search-form input {
+position: absolute;
+top: 37px;
+right: 0;
+
+display: none;
+
+width: 240px;
+height: 40px;
+margin: 0;
+padding: 0;
+
+border-radius: 5px;
+background-color: rgba(248, 247, 244, 1);
+}
 
 .search {
   position: absolute;
@@ -343,14 +358,14 @@ a {
   display: block;
 }
 
-.search-form {
+.login-form {
   position: absolute;
   top: 37px;
   right: 0;
 
   display: none;
 
-  width: 275px;
+  width: 280px;
   height: 215px;
   margin: 0;
   padding: 0;
@@ -377,7 +392,7 @@ input[type="text"],
 input[type="password"]{
   width: 240px;
   height: 40px;
-  margin: 16px 0 0 19px;
+  margin: 16px 0 0 10px;
   padding-left: 16px;
 
   border: 1px solid #000000;
@@ -393,15 +408,15 @@ input[type="submit"]{
   margin-top:10px;
 }
 
-.search-form .button {
-  margin: 11px 0 0 20px;
+.login-form .button {
+  margin: 25px 0 0 20px;
   padding: 10px 20px 10px 20px;
 
   font-size: 18px;
   line-height: 24px;
 }
 
-.search-form a {
+.login-form a {
   display: block;
 
   margin: -42px 0 10px 73px;
@@ -1652,10 +1667,6 @@ select {
   line-height: 18px;
 }
 
-.submit {
-  color: #ffffff;
-}
-
 .catalog p {
   margin: 7px 0 0 13px;
   padding: 0;
@@ -1796,8 +1807,8 @@ select {
 
 .feedback-close {
   position: absolute;
-  top: 40px;
-  right: 35px;
+  top: 15px;
+  right: 20px;
 
   width: 22px;
   height: 22px;
@@ -1805,6 +1816,7 @@ select {
   cursor: pointer;
 
   border: 0;
+  background-color: #f8f3f0;
 
   font-size: 0;
 }
@@ -1855,6 +1867,7 @@ select {
 
 .feedback textarea {
   width: 430px;
+  height: 155px;
 
   color: #cfcfcf;
   border: 1px solid #000000;
@@ -1866,24 +1879,29 @@ select {
 .submit {
   display: inline-block;
 
-  margin: -12px 67px;
-  padding: 12px 13px;
+  margin-left: 290px;
+  padding: 10px 26px 10px 26px;
 
   cursor: pointer;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
 
+  color: #ffffff;
+  border: 0;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+
   font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 .feedback-form input[type="text"], .feedback-form input[type="password"] {
   box-sizing: border-box;
   width: 270px;
-  padding: 10px 15px;
-  padding-right: 40px;
+  height: 40px;
+  margin: 0;
 
   text-transform: uppercase;
 
