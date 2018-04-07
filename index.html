@@ -58,7 +58,7 @@
                 <div class="loupe">
                   <a class="button-search" href="search.html">Поиск</a>
                   <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                    <input type="text" name="what" value="" placeholder="Что ищем?">
+                    <label><input type="text" name="what" value="" placeholder="Что ищем?"></label>
                   </form>
                 </div>
               </li>
@@ -66,8 +66,12 @@
                 <div class="entrance">
                   <a class="button-login" href="login.html">Вход</a>
                   <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                    <input type="text" name="mail" value="" placeholder="Электронная почта">
-                    <input type="text" name="password" value="" placeholder="Пароль">
+                    <label>
+                      <input type="text" name="mail" value="" placeholder="Электронная почта">
+                    </label>
+                    <label>
+                      <input type="text" name="password" value="" placeholder="Пароль">
+                    </label>
                     <button class="button" type="submit">Войти</button>
                     <a class="restore" href="#">Забыли пароль?</a>
                     <a class="new-registration" href="#">Новая регестрация</a>
@@ -148,7 +152,7 @@
             Сливочное с апельсиновым джемом и цитрусовой стружкой
           </p>
           <span class="ice-cream-sum">310 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-              <div class="look"><button class="button" type="button">Быстрый просмотр</button></div>
+          <div class="look"><button class="button" type="button">Быстрый просмотр</button></div>
         </li>
         <li class="ice-cream-item">
           <img src="img/product-2.png" width="267" height="267" alt="Сливочно-
