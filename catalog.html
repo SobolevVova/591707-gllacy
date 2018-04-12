@@ -25,24 +25,24 @@
                   <a class="new" href="#">Новинки</a>
                 </li>
                 <li>
-                  <a href="creamy">Сливочное</a>
+                  <a class="creamy" href="#">Сливочное</a>
                 </li>
                 <li>
-                  <a href="sherbets">Щербеты</a>
+                  <a class="sherbets" href="#">Щербеты</a>
                 </li>
                 <li>
-                  <a href="fruit-ice">Фруктовый лёд</a>
+                  <a class="fruit-ice" href="#">Фруктовый лёд</a>
                 </li>
                 <li>
-                  <a href="melorin">Мелорин</a>
+                  <a class="melorin" href="#">Мелорин</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="transportation.html">Доставка и оплата</a>
+              <a class="transportation" href="#">Доставка и оплата</a>
             </li>
             <li>
-              <a href="company.html">О Компании</a>
+              <a class="company" href="#">О Компании</a>
             </li>
           </ul>
         </nav>
@@ -50,7 +50,7 @@
       <div class="main-header-right">
         <div class="user-block">
           <ul class="user-navigation">
-            <li>
+            <li class="seek">
               <div class="loupe">
                 <a class="button-search" href="search.html">Поиск</a>
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -58,7 +58,7 @@
                 </form>
               </div>
             </li>
-            <li>
+            <li class="entry">
               <div class="entrance">
                 <a class="button-login" href="login.html">Вход</a>
                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -91,7 +91,7 @@
                         Пломбир с апельсиновым джемом
                       </td>
                       <td>
-                        1,5*200руб
+                        1,5x<span>200руб</span>
                       </td>
                       <td>
                         300руб
@@ -99,17 +99,16 @@
                     </tr>
                     <tr>
                       <td>
-                        <button class="cart-close">Закрыть</button>
+                        <button class="cart-close-two">Закрыть</button>
                       </td>
                       <td>
-                        <img src="img/product-1.png" width="33" height="33" alt="Сливочное
-                 с апельсиновым джемом и цитрусовой стружкой">
+                        <img src="img/product-3.png" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                       </td>
                       <td>
                         Клубничный пломбир с присыпкой из белого шоколада
                       </td>
                       <td>
-                        1,5*300руб
+                        1,5x<span>300руб</span>
                       </td>
                       <td>
                         450руб
@@ -117,9 +116,9 @@
                     </tr>
                   </table>
                   <p>
-                    Итого 750руб
+                    Итого: 750руб.
                   </p>
-                  <button type="submit">Оформить заказ</button>
+                  <button class="order" type="submit">Оформить заказ</button>
                 </form>
               </div>
             </li>
@@ -136,7 +135,7 @@
     <div class="container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs-menu">
-          <a class="breadcrumbs-main" href="main.html">Главная</a>
+          <a class="breadcrumbs-main" href="index.html">Главная</a>
         </li>
         <li>
           <a href="catalog.html">Каталог</a>
@@ -149,9 +148,9 @@
         <h1 class="page-title">Сливочное мороженое</h1>
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
           <ul class="filters-menu">
-            <li>
+            <li class="grade">
               <div class="filters-sort">Сортировка:</div>
-              <select name="filters-title" id="filters-title">
+              <select class="fame" name="filters-title" id="filters-title">
                  <option value="1">по популярности</option>
                  <option value="2">сначала недорогие</option>
                  <option value="3">сначала дорогие</option>
@@ -233,7 +232,7 @@
               Сливочное с апельсиновым джемом и цитрусовой стружкой
             </p>
             <span class="catalog-sum">310<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-          <div class="look"><button class="button" type="button">Быстрый просмотр</button></div>
+            <div class="look"><button class="button" type="button">Быстрый просмотр</button></div>
           </li>
           <li class="catalog-item">
             <img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -274,7 +273,7 @@
               Сливочно-черничное с цельными ягодами черники
             </p>
             <span class="catalog-sum">410<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"></path></svg>/кг</span>
-          <div class="look"><button class="button" type="button">Быстрый просмотр</button></div>
+            <div class="look"><button class="button" type="button">Быстрый просмотр</button></div>
           </li>
           <li class="catalog-item">
             <img src="img/product-7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
